@@ -1,5 +1,8 @@
 
 
+
+.hidden { display: none; }
+
 .top {
 	margin: -10px;
 	padding: 20px 0 10px 0;
@@ -15,7 +18,9 @@
 	margin: 20px;
 }
 
-.dropdown {
-	padding: 6px;
-	font-size: 1.6rem;
+.view {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
+

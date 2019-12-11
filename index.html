@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles/brand.css">
 	<link rel="stylesheet" type="text/css" href="styles/layout.css">
+	<link rel="stylesheet" type="text/css" href="styles/form-styles.css">
 </head>
 <body>
 
@@ -13,13 +14,29 @@
 	</div>
 
 	<div class="stuff">
-		<p>Select a Class</p>
-		<select class="dropdown">
-			<option id="yoga">Yoga/Meditation</option>
-			<option id="dance">Dance</option>
-			<option id="fightin">Martial Arts</option>
-			<option id="development">Personal Development</option>
-		</select>
+		<div id="class-type-view" class="view">
+			<p>Select a Class</p>
+			<select class="dropdown">
+				<option id="yoga">Yoga/Meditation</option>
+				<option id="dance">Dance</option>
+				<option id="fightin">Martial Arts</option>
+				<option id="development">Personal Development</option>
+			</select>
+
+			<button class="button">ENTER</button>
+		</div><!-- CLASS TYPE VIEW -->
+
+		<div id="class-selection-views" class="hidden">
+			
+			<div id="yoga-selection-view"></div><!-- YOGA SELECTION VIEW -->
+
+			<div id="dance-selection-view"></div><!-- DANCE SELECTION VIEW -->
+
+			<div id="fightin-selection-view"></div><!-- FIGHTIN SELECTION VIEW -->
+
+			<div id="development-selection-view"></div><!-- DEVELOPMENT SELECTION VIEW -->
+
+		</div><!-- CLASS SELECTION VIEWS -->
 	</div>
 
 </body>
