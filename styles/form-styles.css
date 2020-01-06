@@ -1,9 +1,15 @@
-
+ 
 
 
 .dropdown {
 	padding: 6px;
 	font-size: 1.6rem;
+	font-weight: 100;
+}
+
+.option {
+	text-align: center;
+	
 }
 
 .button {
