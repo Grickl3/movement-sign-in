@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Movement Sign-In</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../styles/brand.css">
+	<link rel="stylesheet" type="text/css" href="../styles/layout.css">
+	<link rel="stylesheet" type="text/css" href="../styles/form-styles.css">
+
+	<script type="text/javascript" src="../js/signin.js"></script>
+</head>
+<body>
+
+	<div class="layout__top">
+		<h1>Yokai Gumi</h1>
+		<h5>CLASS SIGN IN</h5>
+	</div>
+
+	<div class="layout__stuff">
+		
+		<span class="layout__chooser-heading">I am: </span>
+		<button id="established" class="button">An Established Student</button>
+		<button id="new" class="button">A Guest</button>
+		</div>
+		
+		
+	</div>
+
+	<script type="text/javascript">
+		
+		// OPEN SESAME
+
+			const established = document.getElementById("established");
+
+			established.addEventListener("click", function() {
+				openEstablished();
+			});
+
+			const newStudent = document.getElementById("new");
+
+			newStudent.addEventListener("click", function() {
+				openGuest();
+			});
+
+
+	</script>
+
+</body>
+</html>
