@@ -11,9 +11,23 @@ const getStudent = function() {
 }
 
 const openEstablished = function() {
-	console.log("established student");
+	// console.log("established student");
+
+	stepOne.classList.add("hidden");
+	stepTwoEst.classList.remove("hidden");
 }
 
 const openGuest = function() {
-	console.log("guest student");
+	// console.log("guest student");
+
+	stepOne.classList.add("hidden");
+	stepTwoGuest.classList.remove("hidden");
+}
+
+const goBack = function() {
+	// console.log("guest student");
+
+	stepTwoEst.classList.add("hidden");
+	stepTwoGuest.classList.add("hidden");
+	stepOne.classList.remove("hidden");
 }

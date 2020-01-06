@@ -1,7 +1,7 @@
 
 
 
-.hidden { display: none; }
+
 
 .layout__top {
 	margin: -10px;
@@ -27,3 +27,5 @@
 .layout__chooser-heading {
 	font-weight: 700;
 }
+
+.hidden { display: none; }

@@ -15,19 +15,37 @@
 		<h1>Yokai Gumi</h1>
 		<h5>CLASS SIGN IN</h5>
 	</div>
-
-	<div class="layout__stuff">
 		
-		<span class="layout__chooser-heading">I am: </span>
+	<div id="step-one"  class="layout__stuff">
+		<span class="layout__chooser-heading">I am:</span>
 		<button id="established" class="button">An Established Student</button>
 		<button id="new" class="button">A Guest Student</button>
-		</div>
-		
-		
 	</div>
+
+	<div id="step-two-est" class="layout__stuff hidden">
+		<button id="go-back-one" class="button">back</button>
+		<span class="layout__chooser-heading">Username</span>
+		<button id="identification" class="button">Enter</button>
+	</div>
+
+	<div id="step-two-guest" class="layout__stuff hidden">
+		<button id="go-back-two" class="button">back</button>
+		<span class="layout__chooser-heading">Mailchimp Form</span>
+	</div>
+		
+		
+	
 
 	<script type="text/javascript">
 		
+		// VIEWS
+
+			const stepOne = document.getElementById("step-one");
+			const stepTwoEst = document.getElementById("step-two-est");
+			const stepTwoGuest = document.getElementById("step-two-guest");
+			const backButtonOne = document.getElementById("go-back-one");
+			const backButtonTwo = document.getElementById("go-back-two");
+
 		// OPEN SESAME
 
 			const established = document.getElementById("established");
@@ -40,6 +58,13 @@
 
 			newStudent.addEventListener("click", function() {
 				openGuest();
+			});
+
+			backButtonOne.addEventListener("click", function() {
+				goBack();
+			});
+			backButtonTwo.addEventListener("click", function() {
+				goBack();
 			});
 
 
