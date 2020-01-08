@@ -45,6 +45,10 @@
 	</div>
 
 	<div id="step-two-guest" class="layout__stuff hidden">
+		<button id="waive"  class="button">I have read and agree to the terms of the waiver.</button>
+	</div><!-- STEP TWO GUEST -->
+
+	<div id="step-three-guest" class="layout__stuff hidden">
 		<span class="layout__chooser-heading">Mailchimp Form</span>
 
 		<!-- Begin Mailchimp Signup Form -->
@@ -89,7 +93,7 @@
 			</form>
 			</div>
 		<!--End mc_embed_signup-->
-	</div>
+	</div><!-- STEP THREE GUEST -->
 		
 		
 	
@@ -101,20 +105,25 @@
 			const stepOne = document.getElementById("step-one");
 			const stepTwoEst = document.getElementById("step-two-est");
 			const stepTwoGuest = document.getElementById("step-two-guest");
+			const stepThreeGuest = document.getElementById("step-three-guest");
 			const backButtonOne = document.getElementById("go-back-one");
 		
 		// OPEN SESAME
 
 			const established = document.getElementById("established");
+			const newStudent = document.getElementById("new");
+			const waive = document.getElementById("waive");
 
 			established.addEventListener("click", function() {
 				openEstablished();
 			});
 
-			const newStudent = document.getElementById("new");
-
 			newStudent.addEventListener("click", function() {
 				openGuest();
+			});
+
+			waive.addEventListener("click", function() {
+				guestThree();
 			});
 
 			backButtonOne.addEventListener("click", function() {

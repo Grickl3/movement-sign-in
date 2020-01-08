@@ -35,11 +35,19 @@ const openGuest = function() {
 	backButtonOne.classList.remove("hidden");
 }
 
+const guestThree = function() {
+	// console.log("guest student");
+
+	stepTwoGuest.classList.add("hidden");
+	stepThreeGuest.classList.remove("hidden");
+}
+
 const goBack = function() {
 	// console.log("guest student");
 
 	stepTwoEst.classList.add("hidden");
 	stepTwoGuest.classList.add("hidden");
+	stepThreeGuest.classList.add("hidden");
 	stepOne.classList.remove("hidden");
 	backButtonOne.classList.add("hidden");
 }
