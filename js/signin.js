@@ -24,6 +24,7 @@ const openEstablished = function() {
 
 	stepOne.classList.add("hidden");
 	stepTwoEst.classList.remove("hidden");
+	backButtonOne.classList.remove("hidden");
 }
 
 const openGuest = function() {
@@ -31,6 +32,7 @@ const openGuest = function() {
 
 	stepOne.classList.add("hidden");
 	stepTwoGuest.classList.remove("hidden");
+	backButtonOne.classList.remove("hidden");
 }
 
 const goBack = function() {
@@ -39,4 +41,5 @@ const goBack = function() {
 	stepTwoEst.classList.add("hidden");
 	stepTwoGuest.classList.add("hidden");
 	stepOne.classList.remove("hidden");
+	backButtonOne.classList.add("hidden");
 }
