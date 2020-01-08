@@ -24,7 +24,13 @@
 
 	<div id="step-two-est" class="layout__stuff hidden">
 		<button id="go-back-one" class="button">back</button>
-		<span class="layout__chooser-heading">Username</span>
+
+		<form class="layout__stuff" action="https://formspree.io/mvozevge" method="POST">
+			<input type="text" name="name">
+			<!-- <input type="email" name="_replyto"> -->
+			<input type="submit" value="Send">
+		</form>
+		
 		<button id="identification" class="button">Enter</button>
 	</div>
 
@@ -67,8 +73,22 @@
 				goBack();
 			});
 
+		// ROSTER
+
+			let Greg = new Student("Greg","Hoenig","Greg H");
+			roster.push(Greg);
+
 
 	</script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+

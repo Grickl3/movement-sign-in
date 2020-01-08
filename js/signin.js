@@ -1,10 +1,19 @@
 
 
-const student = {
-	username: "unknown",
-	dob: { month: 0, day: 0, year: 0 },
-	waived: false
-};
+// const student = {
+// 	username: "unknown",
+// 	dob: { month: 0, day: 0, year: 0 },
+// 	waived: false
+// };
+
+function Student(first,last,username,dob) {
+	this.firstName = first;
+	this.lastName = last;
+	this.username = username;
+	this.dob = dob;
+}
+
+const roster = []
 
 const getStudent = function() {
 	console.log(student);
