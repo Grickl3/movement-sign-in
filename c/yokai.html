@@ -30,8 +30,16 @@
 			<!-- <input type="email" name="_replyto"> -->
 			<input type="submit" value="Send">
 		</form>
-		
-		<button id="identification" class="button">Enter</button>
+
+		<!-- PAYPAL START -->
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick" />
+				<input type="hidden" name="hosted_button_id" value="N5DYLL8T2K2DC" />
+				<input type="image" src="http://sqglz.ink/movement-sign-in/img/yokai-donate-button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+			</form>
+
+		<!-- PAYPAL END -->
 	</div>
 
 	<div id="step-two-guest" class="layout__stuff hidden">
